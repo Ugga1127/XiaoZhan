@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Picture/images.jpg">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>肖战</title>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="2肖战.html">肖战</a></li>
+                <li><a href="3影视作品.html">影视作品</a></li>
+                <li><img src="./Picture/肖战top pic.jpg" alt="肖战" width="60px" height="60px"></li>
+                <li><a href="4音乐作品.html">音乐作品</a></li>
+                <li><a href="5奖项与荣誉.html">奖项与荣誉</a></li>  
+                <li><a href="6feedback.html">评价</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <div class="肖战介绍">
+            <div class="介绍">
+                <img src="Picture/肖战5.webp" alt="肖战5" width="200px" height="300px">
+                <span>
+                    <h1>肖战</h1>
+                    <p>
+                        肖战 (英语:Sean Xiao,1991年10月5日—)，重庆人，中国大陆男演员、歌手。
+                        2016年以男子音乐组合
+                        <a href="https://baike.baidu.com/item/X%E7%8E%96%E5%B0%91%E5%B9%B4%E5%9B%A2/20112241" target="_blank">X玖少年团</a>
+                        主唱正式出道,2019年凭电视剧
+                        <a href="https://baike.baidu.com/item/%E9%99%88%E6%83%85%E4%BB%A4/22426934" target="_blank">《陈情令》</a>
+                        中魏无羡一角成名，同年成立肖战工作室。
+                        2020年发行单曲
+                        <a href="https://baike.baidu.com/item/%E5%85%89%E7%82%B9/49934196" target="_blank">《光点》</a>
+                        为目前全球最畅销数字单曲,并以2548万的销量创下发行24小时内销售最快的数字专辑吉尼斯世界纪录。
+                    </p>
+                </span>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="肖战介绍">
+            <div class="生平经历">   
+                <span>
+                    <h1>人物经历</h1>
+                    <h2>早年</h2>
+                    <p>
+                        大学时期就读于<a href="https://baike.baidu.com/item/%E9%87%8D%E5%BA%86%E5%B7%A5%E5%95%86%E5%A4%A7%E5%AD%A6%E7%8E%B0%E4%BB%A3%E5%9B%BD%E9%99%85%E8%AE%BE%E8%AE%A1%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2?fromModule=lemma_search-box" target="_blank">重庆工商大学现代国际设计艺术学院</a>,该学院为校方与波兰华沙人文社科大学联合举办非独立法人中外合作办学机构。
+                        于在校期间担任班级文艺委员、学生艺术团声乐部部长、男声声部部长，并参加校语言艺术分团的演员，并曾获校园十佳歌手称号。毕业后曾当过设计师、摄影师。
+                    </p>
+                </span>
+                <img src="Picture/肖战3.jpg" alt="肖战3" width="200px" height="300px">
+            </div>
+        </div>
+       
+        <hr>
+        
+        <div class="container">
+            <h1 style="text-align:center;color: #000; font-size: 40px;">事业经历</h1>
+            <div class="grid" id="yearGrid"></div>
+        </div>
+
+        
+        <script>
+        const data = {
+            2015: '参加才艺养成选秀节目 <a href="https://baike.baidu.com/item/燃烧吧少年/18708572" target="_blank">《燃烧吧少年》</a>。',
+            2016: '2016年,肖战参演青春校园超能力网络剧<a href="https://baike.baidu.com/item/%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD?fromModule=lemma_search-box" target="_blank">《超星星学园》</a>,饰演男主角方天择；9月,<a href="https://baike.baidu.com/item/X%E7%8E%96%E5%B0%91%E5%B9%B4%E5%9B%A2/20112241" target="_blank">X玖少年团</a>成员的身份正式出道。',
+            2017: '2017年成团后于上海体育馆首次举办演唱会<a href="https://baike.baidu.com/item/%E4%BB%A5%E5%B7%B1%E4%B9%8B%E5%90%8D?fromModule=lemma_search-box" target="_blank">《以己之名》</a>。同年于<a href="https://baike.baidu.com/item/2017%E4%BA%9A%E6%B4%B2%E9%87%91%E6%9B%B2%E5%A4%A7%E8%B5%8F?fromModule=lemma_search-box" target="_blank">《2017亚洲金曲大赏》</a>中,<a href="https://baike.baidu.com/item/X%E7%8E%96%E5%B0%91%E5%B9%B4%E5%9B%A2/20112241" target="_blank">X玖少年团</a>获取了"年度最受欢迎团体"。',
+            2018: '参与综艺与剧集演出，逐步积累人气。',
+            2019: '2019年1月,宣布主演古装玄幻剧<a href="https://baike.baidu.com/item/%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86/5313" target="_blank">《斗罗大陆》</a> 。6月,<a href="https://baike.baidu.com/item/%E9%99%88%E6%83%85%E4%BB%A4/22426934" target="_blank">《陈情令》</a>开播。凭借剧中魏无羡一角获年度亚洲最佳男演员。9月,肖战工作室正式成立。10月,宣布参与东方卫视制作的大型室内音乐竞演综艺节目<a href="https://zh.wikipedia.org/wiki/%E6%88%91%E4%BB%AC%E7%9A%84%E6%AD%8C_(%E7%BB%BC%E8%89%BA%E8%8A%82%E7%9B%AE)" target="_blank">《我们的歌》</a> 。12月31日,参与东方卫视<a href="https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86%E8%B7%A8%E5%B9%B4%E6%99%9A%E4%BC%9A" target="_blank">《圆梦东方跨年盛典》</a>。先与张艺兴同台演唱开场节目 <a href="https://baike.baidu.com/item/%E6%88%91%E4%BB%AC%E9%83%BD%E6%98%AF%E8%BF%BD%E6%A2%A6%E4%BA%BA/23280169" target="_blank">《我们都是追梦人》</a>，后独唱<a href="https://baike.baidu.com/item/%E4%BD%99%E5%B9%B4/24166266?fromModule=search-result_lemma" target="_blank">《余年》</a>及<a href="https://baike.baidu.com/item/%E7%A5%9E%E5%A5%87/171673?fromModule=search-result_lemma" target="_blank">《神奇》</a>。',
+            2020: '2020年,1月24日,首次登上中央广播电视总台春节联欢晚会,参演小品<a href="https://baike.baidu.com/item/%E5%96%9C%E6%AC%A2%E4%BD%A0%E5%96%9C%E6%AC%A2%E6%88%91/24288886?fromtitle=%E5%96%9C%E6%AC%A2%E4%BD%A0%EF%BC%8C%E5%96%9C%E6%AC%A2%E6%88%91&fromid=24284973&fromModule=lemma_search-box" target="_blank">《喜欢你,喜欢我》</a>。4月25日,肖战个人单曲<a href="https://baike.baidu.com/item/%E5%85%89%E7%82%B9/49934196https://baike.baidu.com/item/%E5%85%89%E7%82%B9/49934196" target="_blank">《光点》</a>上线。8月,主演电视剧<a href="https://baike.baidu.com/item/%E7%8E%8B%E7%89%8C%E9%83%A8%E9%98%9F/54062635" target="_blank">《王牌部队》</a>开拍。10月,参加中国中央电视台重阳节特备节目<a href="https://baike.baidu.com/item/%E5%B2%81%E5%B2%81%E5%8F%88%E9%87%8D%E9%98%B3?fromModule=lemma_search-box" target="_blank">《岁岁又重阳》</a> ,演唱<a href="https://baike.baidu.com/item/%E5%A4%9C%E7%A9%BA%E4%B8%AD%E6%9C%80%E4%BA%AE%E7%9A%84%E6%98%9F/4118870" target="_blank">《夜空中最亮的星》</a>。12月6日,以表演嘉宾身份出席<a href="https://baike.baidu.com/item/%E6%BC%94%E5%91%98%E8%AF%B7%E5%B0%B1%E4%BD%8D%E7%AC%AC%E4%BA%8C%E5%AD%A3?fromtitle=%E6%BC%94%E5%91%98%E8%AF%B7%E5%B0%B1%E4%BD%8D2&fromid=55226932&fromModule=lemma_search-box" target="_blank">《演员请就位2》</a>,演唱<a href="https://baike.baidu.com/item/%E7%94%A8%E5%B0%BD%E6%88%91%E7%9A%84%E4%B8%80%E5%88%87%E5%A5%94%E5%90%91%E4%BD%A0?fromModule=lemma_search-box" target="_blank">《用尽我的一切奔向你》</a>。12月20日,出席腾讯视频星光大赏,献唱电视剧<a href="https://baike.baidu.com/item/%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/23138224" target="_blank">《余生,请多指教》</a>主题曲与插曲。12月31日,再次参与东方卫视<a href="https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86%E8%B7%A8%E5%B9%B4%E6%99%9A%E4%BC%9A" target="_blank">《圆梦东方跨年盛典》</a>。',
+            2021: '2021年,参演央华版<a href="https://baike.baidu.com/item/%E5%A6%82%E6%A2%A6%E4%B9%8B%E6%A2%A6/56665094" target="_blank">《如梦之梦》</a>话剧,饰演五号病人。',
+            2022: '2022年2月,宣布出演年代剧<a href="https://baike.baidu.com/item/%E6%A2%A6%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7/56730282" target="_blank">《梦中的那片海》</a>肖春生一角。3月,电视剧<a href="https://baike.baidu.com/item/%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/23138224" target="_blank">《余生,请多指教》</a>播出。肖战凭借剧中角色顾魏于2022中国大陆电视剧角色指数排行榜中拿下第一名。9月,宣布出演都市情感剧<a href="https://baike.baidu.com/item/%E9%AA%84%E9%98%B3%E4%BC%B4%E6%88%91?fromModule=lemma_search-box" target="_blank">《骄阳伴我》</a>盛阳一角。',
+            2023: '2023年5月,由<a href="https://baike.baidu.com/item/%E5%BE%90%E5%85%8B/7391" target="_blank">徐克</a>执导改编自由金庸经典小说<a href="https://baike.baidu.com/item/%E5%B0%84%E9%9B%95%E8%8B%B1%E9%9B%84%E4%BC%A0/5678" target="_blank">《射雕英雄传》</a>的电影<a href="https://baike.baidu.com/item/%E5%B0%84%E9%9B%95%E8%8B%B1%E9%9B%84%E4%BC%A0%EF%BC%9A%E4%BE%A0%E4%B9%8B%E5%A4%A7%E8%80%85?fromModule=lemma_search-box" target="_blank">《射雕英雄传：侠之大者》</a>宣布由肖战饰演郭靖。6月,电视剧<a href="https://baike.baidu.com/item/%E6%A2%A6%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7/56730282" target="_blank">《梦中的那片海》</a>正式播出。12月,宣布出演由<a href="https://baike.baidu.com/item/%E9%83%91%E6%99%93%E9%BE%99/1343" target="_blank">郑晓龙</a>执导古装权谋剧<a href="https://baike.baidu.com/item/%E8%97%8F%E6%B5%B7%E4%BC%A0?fromModule=lemma_search-box" target="_blank">《藏海传》</a>。',
+        };
+
+        const grid = document.getElementById("yearGrid");
+
+        for (const year in data) {
+            const box = document.createElement("div");
+            box.className = "year-box";
+            box.innerHTML = `
+                <div class="year">${year}</div>
+                <div class="arrow">▶</div>
+                <div class="details">${data[year]}</div>
+            `;
+            box.addEventListener("click", () => {
+                const allBoxes = document.querySelectorAll(".year-box");
+                allBoxes.forEach(b => {
+                    if (b !== box) b.classList.remove("active");
+                });
+                box.classList.toggle("active");
+            });
+            grid.appendChild(box);
+        }
+        </script>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="footercontent">
+                <h3>Contact Us</h3>
+                <p>Email Us:<a href="mailto:uggajiva.lim@gmail.com">uggajiva.lim@gmail.com</a></p>
+                <p>Call Us:<a href="tel:+60123456789">014-699-0920</a></p>
+                <p>Address:</p>
+                <p>Lorong 999, Jalan Xiao Zhan,</p>
+                <p> Kuching , Sarawak</p>
+            </div>
+            <div class="footercontent">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="2肖战.html">肖战</a></li>
+                    <li><a href="3影视作品.html">影视作品</a></li>
+                    <li><a href="4音乐作品.html">音乐作品</a></li>
+                    <li><a href="5奖项与荣誉.html">奖项与荣誉</a></li>
+                    <li><a href="6feedback.html">评价</a></li> 
+                </ul>
+            </div>
+            <div class="footercontent">
+                <h3 class="socialmedialink">Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="indexbottom-bar">
+            <p class="copyright">&copy; LIM | Last Updated:202020202</p>
+        </div>
+    </footer>
+</body>
+</html>
