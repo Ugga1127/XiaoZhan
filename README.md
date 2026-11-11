@@ -1,1 +1,1 @@
-This is a website for Bong Hui Joo!
+My first time using HTML and CSS to create a website
